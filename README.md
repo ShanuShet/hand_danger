@@ -3,22 +3,22 @@
 <h1>Hand Danger Detection Prototype</h1>
 
 <h2>Objective</h2>
-<p>The prototype tracks a user’s hand in real time using a webcam and detects when the hand approaches a virtual boundary on the screen. When the hand is too close, a warning message “DANGER DANGER” is displayed.
-The project demonstrates: - Real-time hand tracking without MediaPipe / OpenPose / cloud APIs - Classical computer vision techniques - A virtual object boundary on the camera feed - Distance-based state classification: SAFE / WARNING / DANGER - Visual on‑screen feedback - Performance > 8 FPS (CPU‑only).</p>
+<p>The prototype tracks a user’s hand in real time using a webcam and detects when the hand approaches a virtual boundary on the screen. When the hand is too close, a warning message “DANGER DANGER” is displayed.</p>
+<p>The project demonstrates: - Real-time hand tracking without MediaPipe / OpenPose / cloud APIs - Classical computer vision techniques - A virtual object boundary on the camera feed - Distance-based state classification: SAFE / WARNING / DANGER - Visual on‑screen feedback - Performance > 8 FPS (CPU‑only).</p>
 <p>
   <b>Processing Pipeline</b>
-<li>
-<ol>Capture frame from webcam.</ol>
-<ol>Flip horizontally for natural mirror‑style control.</ol>
-<ol>Convert to HSV color space.</ol>
-<ol>Threshold skin color region using skin range mask.</ol>
-<ol>Clean mask using morphological operations.</ol>
-<ol>Find contours → select largest contour as hand.</ol>
-<ol>Compute centroid of the contour (representing hand position).</ol>
-<ol>Calculate distance from hand to virtual object boundary.</ol>
-<ol>Determine state based on thresholds.</ol>
-<ol>Render overlays and warnings.</ol>
-</li>
+<ol>
+<li>Capture frame from webcam.</li>
+<li>Flip horizontally for natural mirror‑style control.</li>
+<li>Convert to HSV color space.</li>
+<li>Threshold skin color region using skin range mask.</>li
+<li>Clean mask using morphological operations.</li>
+<li>Find contours → select largest contour as hand.</li>
+<li>Compute centroid of the contour (representing hand position).</li>
+<li>Calculate distance from hand to virtual object boundary.</li>
+<li>Determine state based on thresholds.</li>
+<li>Render overlays and warnings.</li>
+</ol>
 </p>
 <p>
   <h4>System Requirements</h4>
